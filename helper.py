@@ -1,12 +1,15 @@
 import google.generativeai as genai
+from IPython.display import display, Markdown
 
 genai.configure(api_key="AIzaSyCSuDYOuYzrk86N5KYEP442X_TSzE50GbY")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
+
 def responsellm(prompt):
     print("Generating response...")
     response = model.generate_content(prompt)
-    return response.text
+    return display(Markdown(response.text))
+
 
 def separate_code_and_markdown(response):
     """
@@ -21,7 +24,7 @@ def separate_code_and_markdown(response):
     lines = response.split("\n")
     code_lines = []
     markdown_lines = []
-   
+
     in_code_block = False
 
     for line in lines:
@@ -33,8 +36,5 @@ def separate_code_and_markdown(response):
             code_lines.append(line)
         else:
             markdown_lines.append(line)
-   
-    return {
-        "code": "\n".join(code_lines),
-        "markdown": "\n".join(markdown_lines)
-    }
+
+    return {"code": "\n".join(code_lines), "markdown": "\n".join(markdown_lines)}

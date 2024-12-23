@@ -1,0 +1,62 @@
+{
+  "user": {
+    "id": 12345,
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "address": {
+      "street": "123 Main St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "91234"
+    },
+    "phoneNumbers": [
+      {
+        "type": "home",
+        "number": "555-123-4567"
+      },
+      {
+        "type": "mobile",
+        "number": "555-987-6543"
+      }
+    ],
+    "orders": [
+      {
+        "orderId": 1001,
+        "orderDate": "2024-03-08",
+        "totalAmount": 125.50,
+        "items": [
+          {
+            "itemId": 2001,
+            "itemName": "Widget A",
+            "quantity": 2,
+            "price": 25.00
+          },
+          {
+            "itemId": 2002,
+            "itemName": "Widget B",
+            "quantity": 1,
+            "price": 75.50
+          }
+        ]
+      },
+      {
+        "orderId": 1002,
+        "orderDate": "2024-03-15",
+        "totalAmount": 50.00,
+        "items": [
+          {
+            "itemId": 2003,
+            "itemName": "Gadget X",
+            "quantity": 1,
+            "price": 50.00
+          }
+        ]
+      }
+    ]
+  },
+  "settings": {
+    "theme": "dark",
+    "notificationsEnabled": true
+  }
+}
