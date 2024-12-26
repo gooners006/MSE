@@ -1,3 +1,15 @@
-khuyen nghi cong thuc theo che do an vi du:(calorie, vegan, vegetarian,carnivore,...)
-du doan calorie, chat beo,...
-chup anh de du doan ra calorie
+Mục tiêu:
+Xây dựng một nền tảng AI cá nhân hóa, giúp người dùng theo dõi sức khỏe và dinh dưỡng dựa trên thông tin cá nhân và khẩu phần ăn. Sản phẩm không chỉ gợi ý các công thức nấu ăn phù hợp mà còn dự đoán tác động của thói quen ăn uống lên sức khỏe (tăng/giảm cân, nguy cơ bệnh).
+
+Tầm nhìn:
+Ứng dụng sẽ hỗ trợ người dùng xây dựng thói quen ăn uống lành mạnh và nâng cao nhận thức về dinh dưỡng một cách dễ dàng và tiện lợi.
+
+Task 1: nghiên cứu và xây dựng module python với các tính năng phù hợp yêu cầu + tìm dataset cho công thức và ảnh(Spoonacular, Edamam, Food-101, Recipe1M)
+
+Task 2: nghiên cứu và xây dựng model (pretrained/tự train) việc dự đoán calorie và macro-nutrients từ hình ảnh
+
+Task 3: xây dựng database thông tin người dùng và lịch sử món ăn để phân tích lâu dài và cá nhân hóa trải nghiệm
+
+Task cân nhắc làm: 
+- lấy đánh giá độ chính xác/phù hợp của gợi ý từ người dùng để cải thiện việc training
+- Dựa vào lịch sử dinh dưỡng có thể gợi ý các loại thực phẩm phù hợp cho user dựa theo tháp dinh dưỡng
