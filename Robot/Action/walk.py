@@ -1,0 +1,2 @@
+def walking():
+    print("Walking")

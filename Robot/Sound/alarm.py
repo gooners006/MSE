@@ -1,0 +1,2 @@
+def beep():
+    print("Beep")

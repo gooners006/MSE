@@ -1,0 +1,2 @@
+def wear():
+    print("Wearing")
