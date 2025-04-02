@@ -215,7 +215,7 @@ class GuitarTunerApp:
         self.ui.start_button.clicked.connect(self.toggle_tuning)
         self.timer = QTimer()
         self.timer.timeout.connect(self.update_ui)
-        self.timer.start(100)
+        self.timer.start(200)
 
     def toggle_tuning(self):
         if not self.is_recording:
@@ -262,7 +262,7 @@ class GuitarTunerApp:
                 self.ui.tuner_bar.setValue(int(cents))
 
                 # Update direction label
-                if abs(cents) < 5:
+                if abs(cents) < 10:
                     self.ui.direction_label.setText("In Tune!")
                     self.ui.direction_label.setStyleSheet(
                         "color: #4CAF50; font-size: 24px;"
