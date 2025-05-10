@@ -1,0 +1,6 @@
+*.wav
+*.rar
+*.zip
+*.weights
+*.keras
+.DS_Store
