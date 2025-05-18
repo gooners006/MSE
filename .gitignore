@@ -4,3 +4,6 @@
 *.weights
 *.keras
 .DS_Store
+*.jpeg
+*.jpg
+*.png
