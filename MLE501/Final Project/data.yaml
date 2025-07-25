@@ -1,0 +1,7 @@
+path: ./  # dataset root dir
+train: train/images
+val: test/images  # Using test as validation; split if needed
+
+# Classes
+nc: 11
+names: ['BL', 'CL', 'DM', 'JB', 'LA', 'PC', 'RA', 'SA', 'SL', 'SLA', 'SRA']
