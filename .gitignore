@@ -4,9 +4,9 @@
 *.weights
 *.keras
 .DS_Store
-*.jpeg
-*.jpg
-*.png
+# *.jpeg
+# *.jpg
+# *.png
 IVP501/Final Project/Deepfish/
 IVP501/Final Project/datasets/
 IVP501/Final Project/runs/
