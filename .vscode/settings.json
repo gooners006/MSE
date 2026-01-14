@@ -1,6 +1,7 @@
 {
   "peacock.color": "#1857a4",
   "cSpell.words": [
+    "bigram",
     "Bigrams",
     "ngram",
     "Tfidf",
